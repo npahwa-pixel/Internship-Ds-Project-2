@@ -1,0 +1,131 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Python / Virtualenv
+# =========================
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+coverage/
+.coverage
+htmlcov/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.env
+secrets.*
+*secret*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# =========================
+# ML / Datasets / Outputs
+# =========================
+# Local datasets / caches
+data/
+datasets/
+cache/
+.hf_cache/
+.huggingface/
+wandb/
+mlruns/
+
+# Training outputs / artifacts
+reports/
+runs/
+outputs/
+logs/
+tmp/
+_tmp_*/
+**/_tmp_*/
+checkpoints/
+**/checkpoint-*/
+**/checkpoint_*/
+
+# Model weights & large artifacts (keep code/config, ignore heavy binaries)
+models/**/pytorch_model.bin
+models/**/model.safetensors
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/optimizer.pt
+models/**/scheduler.pt
+models/**/rng_state.pth
+models/**/trainer_state.json
+models/**/training_args.bin
+models/**/tokenizer.json
+models/**/spm.model
+models/**/added_tokens.json
+models/**/special_tokens_map.json
+models/**/tokenizer_config.json
+
+# If you want to keep small config files inside models/, allow them:
+!models/**/config.json
+!models/**/README*
+!models/**/.gitkeep
+
+# Predictions / evaluation dumps
+*.jsonl
+*.parquet
+*.arrow
+*.csv
+*.tsv
+
+# =========================
+# Node / UI (if applicable)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.next/
+out/
+.cache/
+
+# =========================
+# Systemd / service runtime
+# =========================
+*.pid
+*.sock
+*.service.bak

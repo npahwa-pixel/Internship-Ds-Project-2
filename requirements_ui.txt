@@ -1,0 +1,12 @@
+# UI + serving
+gradio>=4.0.0
+
+# Core ML stack (you likely already have these)
+torch
+transformers
+peft
+datasets
+numpy
+
+# Metrics (already in your repo)
+seqeval
