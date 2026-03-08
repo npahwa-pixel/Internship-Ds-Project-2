@@ -9,13 +9,13 @@ This UI runs inference for your three projects inside `Final-ds-projects`:
 ## Install + Run
 
 ```bash
-cd /Users/npahwa/Desktop/Final-ds-projects
+cd /Users/path
 
 python -m venv .venv_ui
 source .venv_ui/bin/activate
 pip install -r unified_ner_ui/requirements.txt
 
-export PROJECT_ROOT="/Users/npahwa/Desktop/Final-ds-projects"
+export PROJECT_ROOT="/Users/path"
 python unified_ner_ui/app.py
 ```
 
@@ -30,7 +30,7 @@ Use the Advanced box to point to any HF checkpoint directory:
 If you want to simplify paths, you can create symlinks and edit `models.json`:
 
 ```bash
-cd /Users/npahwa/Desktop/Final-ds-projects
+cd /Users/path
 ln -s ner_json_conll_deberta/ner_json_conll_deberta conll_project
 ln -s ner_json_deberta_fullft_multi/ner_json_deberta_fullft_multi fullft_multi_project
 ln -s ner_json_deberta_fullft_multi_4ds/ner_json_deberta_fullft_multi_4ds fullft_4ds_project
