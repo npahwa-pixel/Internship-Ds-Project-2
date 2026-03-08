@@ -27,7 +27,7 @@ Given an input sentence, extract named entities and return a stable JSON schema.
 **Model Downloads (External)**
 Model checkpoints are not stored in GitHub. Download them from:
 ```
-https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
+https://drive.google.com/drive/folders/1pnKav8WvsTNgyyrSf8pgsvvQUBSyiG1S?ths=true
 ```
 Place them here:
 ```
