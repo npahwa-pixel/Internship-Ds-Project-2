@@ -15,13 +15,8 @@ It supports:
 
 ## Where to copy your model folder (big artifacts)
 
-Copy your existing model run directory here:
-
-```text
-models/deberta_fullft_multi_4ds/
-  checkpoint-xxxx/
-  run_summary.json
-  predictions_sample.jsonl (optional)
+```
+https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
 ```
 
 ## Install
