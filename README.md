@@ -13,7 +13,7 @@ This repo contains:
 
 ### UI Demo Video
 ```text
-https://docs.google.com/document/d/1-8FDQSJbfp_5PFaARHhpRhoY1qvQywEIbfCq5h0xO74/edit?tab=t.0
+https://drive.google.com/file/d/1MIx6V4CkRnbYPDeIdQH9hkadA0TUFbei/view?usp=sharing
 ```
 ### Model Download Links
 ```text
