@@ -28,7 +28,7 @@ It is designed to work with an existing checkpoint directory like:
 ```
 ## Model checkpoints are stored externally (not committed to GitHub). Download them from:
 ```
-https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
+https://drive.google.com/drive/folders/1pnKav8WvsTNgyyrSf8pgsvvQUBSyiG1S?ths=true
 ```
 
 ## Install
