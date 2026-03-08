@@ -1,46 +1,109 @@
-# Python / env
+# =========================================================
+# Internship-Ds-Project-2 — .gitignore (models excluded, configs allowed)
+# =========================================================
+
+# -------------------------
+# Python / Virtual env
+# -------------------------
 .venv/
 .venv_ui/
 venv/
+ENV/
+env/
+
+# -------------------------
+# Python cache / tooling
+# -------------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
 
-# OS / editor
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# OS / Editor
+# -------------------------
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Ignore model artifacts everywhere (keep placeholders allowed)
-**/models/**
-!**/models/**/.gitkeep
-!**/models/**/PLACE_*.txt
-!**/models/**/README*.md
+# -------------------------
+# Logs / temp
+# -------------------------
+*.log
+*.tmp
+*.temp
 
-# Big checkpoint files
-**/checkpoint-*/
+# =========================================================
+# MODEL ARTIFACTS (DO NOT COMMIT)
+# =========================================================
+
+# HuggingFace / Torch weights
 **/*.safetensors
-**/*.bin
 **/*.pt
 **/*.pth
+**/*.bin
+
+# Trainer state / optimizer artifacts
 **/optimizer.pt
 **/scheduler.pt
+**/rng_state.pth
 **/trainer_state.json
 **/training_args.bin
 
-# temp eval dirs
+# Common HF checkpoint folders
+**/checkpoint-*/
 **/_tmp_eval*/
 **/_tmp_eval_transfer*/
 **/_eval_tmp*/
 
-# Keep legacy scripts but ignore heavy artifacts inside legacy
-**/legacy/**/checkpoint-*/
-**/legacy/**/*.safetensors
-**/legacy/**/*.pt
-**/legacy/**/*.pth
-**/legacy/**/*.bin
+# Tokenizers / caches that can explode (keep configs below)
+**/.cache/
+**/wandb/
+**/mlruns/
 
-# zips
+# Zips / large archives
 **/*.zip
+**/*.tar.gz
+**/*.tgz
+**/*.7z
+
+# Legacy folder (keep code locally; not needed in repo)
+**/legacy/**
+
+# =========================================================
+# MODELS FOLDER RULE (configs allowed, weights blocked above)
+# =========================================================
+# Ignore everything under any models/ folder...
+**/models/**
+
+# ...but keep lightweight config artifacts + placeholders
+!**/models/**/.gitkeep
+!**/models/**/README*.md
+!**/models/**/PLACE*.txt
+!**/models/**/config.json
+!**/models/**/adapter_config.json
+!**/models/**/tokenizer.json
+!**/models/**/tokenizer_config.json
+!**/models/**/special_tokens_map.json
+!**/models/**/added_tokens.json
+!**/models/**/spm.model
+
+# (Optional) keep label/schema files if you store them beside configs
+!**/models/**/labels*.json
+!**/models/**/schema*.json
