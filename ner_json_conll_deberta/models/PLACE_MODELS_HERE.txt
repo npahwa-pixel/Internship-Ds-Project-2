@@ -1,1 +1,30 @@
-PLACE MODELS HERE (download link in README). Do not commit weights.
+This repository does NOT store large model weights (checkpoints, *.safetensors, *.bin, optimizer.pt, etc.).
+Download the trained checkpoints from the Drive link and place them inside THIS folder:
+
+Model download index (Drive doc):
+https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
+
+Expected folder structure (ner_json_conll_deberta):
+models/
+  deberta_conll_head/
+    checkpoint-1200/
+    checkpoint-1756/
+  deberta_conll_lora/
+    checkpoint-1600/
+    checkpoint-1756/
+  lora_exp1_r8_qkv/
+    checkpoint-1600/
+    checkpoint-1756/
+  lora_exp2_r16_qkv/
+    checkpoint-1600/
+    checkpoint-1756/
+
+Quick sanity checks (run from ner_json_conll_deberta/):
+  ls -lah models/
+  ls -lah models/deberta_conll_head/checkpoint-1756/
+  ls -lah models/deberta_conll_lora/checkpoint-1756/
+
+If the folders exist but inference/eval fails, double-check:
+ The checkpoint directory contains tokenizer files + model weights (or adapter weights for LoRA)
+ Your venv has deps installed (datasets, seqeval, transformers, peft, torch, etc.)
+ You’re running commands from the correct pipeline folder (ner_json_conll_deberta/)
