@@ -21,7 +21,7 @@ It’s designed to be lightweight and easy to ship while still providing strong 
 
 ### Model Description
 
-- **Developed by:** Varun (npahwa-pixel)
+- **Developed by:** Naman Pahwa (npahwa-pixel)
 - **Model type:** DeBERTa-v3-large + LoRA adapter (PEFT) for token classification (NER)
 - **Base model:** `tner/deberta-v3-large-conll2003`
 - **Adapter name:** `lora_exp1_r8_qkv`
