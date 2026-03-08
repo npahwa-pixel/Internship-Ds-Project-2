@@ -1,4 +1,4 @@
-# DeBERTa NER→JSON — 4-dataset ML Pipeline (No UI)
+# DeBERTa NER→JSON — 4-dataset ML Pipeline
 
 This project is a **proper ML pipeline structure** for your **4-dataset** run:
 - `tner/conll2003`
