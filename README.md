@@ -17,7 +17,7 @@ https://drive.google.com/file/d/1MIx6V4CkRnbYPDeIdQH9hkadA0TUFbei/view?usp=shari
 ```
 ### Model Download Links
 ```text
-https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
+https://drive.google.com/drive/folders/1pnKav8WvsTNgyyrSf8pgsvvQUBSyiG1S?ths=true
 ```
 
 ## Problem Statement
