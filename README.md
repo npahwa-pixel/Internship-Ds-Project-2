@@ -306,7 +306,7 @@ This is the **final selected model** because it was **fully fine-tuned** on **4 
 This is an **umbrella repository** that contains **multiple pipelines** (CoNLL Head/LoRA, FullFT Multi, FullFT Multi-4DS) plus a unified UI. Each pipeline is self-contained (configs + src + models + outputs).
 
 ```text
-Final-ds-projects/
+path/
 ├── README.md                         # Umbrella README (this file)
 ├── ner_json_conll_deberta/           # Pipeline 1: CoNLL Head + LoRA + transfer eval
 │   ├── models/                       # CoNLL head checkpoints + LoRA adapters
