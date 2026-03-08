@@ -1,4 +1,4 @@
-# Unified NER → JSON Gradio UI (3 Projects)
+# Unified NER → JSON Gradio UI
 
 This UI runs inference for your three projects inside `Final-ds-projects`:
 
