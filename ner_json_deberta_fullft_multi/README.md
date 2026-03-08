@@ -1,4 +1,4 @@
-# DeBERTa Full Fine-tune — Proper ML Pipeline (No UI)
+# DeBERTa Full Fine-tune — Proper ML Pipeline
 
 This repo refactors a single-file training script into a **clean end-to-end ML workflow**:
 
