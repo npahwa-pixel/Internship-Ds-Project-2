@@ -1,0 +1,5 @@
+{
+  "CoNLL DeBERTa head": "{PROJECT_ROOT}/ner_json_conll_deberta/ner_json_conll_deberta/models/deberta_conll_head",
+  "FullFT multi (3 datasets) checkpoint-14319": "{PROJECT_ROOT}/ner_json_deberta_fullft_multi/ner_json_deberta_fullft_multi/models/deberta_fullft_multi/checkpoint-14319",
+  "FullFT multi (4 datasets) checkpoint-12538": "{PROJECT_ROOT}/ner_json_deberta_fullft_multi_4ds/ner_json_deberta_fullft_multi_4ds/models/deberta_fullft_multi_4ds/checkpoint-12538"
+}

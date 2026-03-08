@@ -1,0 +1,20 @@
+model: microsoft/deberta-v3-large
+datasets:
+  - tner/conll2003
+  - tner/ontonotes5
+  - tner/wnut2017
+output_dir: models/deberta_fullft_multi
+max_length: 192
+epochs: 3
+lr: 2.0e-5
+weight_decay: 0.01
+batch_size: 1
+eval_batch_size: 1
+grad_accum: 16
+warmup_ratio: 0.1
+seed: 42
+freeze_bottom_layers: 12
+mps_empty_cache_steps: 20
+eval_json_samples: 200
+save_predictions_jsonl: true
+per_dataset_eval: true

@@ -1,0 +1,23 @@
+# Core ML
+torch
+transformers>=4.40
+datasets>=2.19
+accelerate>=0.30
+numpy
+
+# Metrics / evaluation
+seqeval>=1.2
+scikit-learn
+
+# JSON schema validation
+jsonschema>=4.20
+
+# HF hub utilities (T-NER label.json fallback)
+huggingface_hub>=0.23
+requests>=2.31
+
+# Model weights format
+safetensors>=0.4
+
+# Config helpers
+pyyaml>=6.0

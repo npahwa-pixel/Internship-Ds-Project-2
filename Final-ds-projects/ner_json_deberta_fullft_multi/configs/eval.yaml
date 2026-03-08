@@ -1,0 +1,12 @@
+checkpoint: models/deberta_fullft_multi
+datasets:
+  - tner/conll2003
+  - tner/ontonotes5
+  - tner/wnut2017
+split: test
+max_length: 192
+batch_size: 4
+seed: 42
+eval_json_samples: 200
+save_predictions_jsonl: true
+per_dataset_eval: true

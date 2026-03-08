@@ -1,0 +1,4 @@
+checkpoint: models/deberta_fullft_multi_4ds
+max_length: 192
+input_text: "OpenAI is based in San Francisco."
+output_jsonl: outputs/infer_outputs/predictions.jsonl

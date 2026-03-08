@@ -1,0 +1,17 @@
+[Unit]
+Description=NER Gradio UI
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/your/repo
+Environment=HOST=0.0.0.0
+Environment=PORT=7860
+Environment=MODELS_DIR=models
+Environment=JSONL_PATH=active_learning/corrections.jsonl
+ExecStart=/usr/bin/python -m ui.gradio_app --host ${HOST} --port ${PORT} --models_dir ${MODELS_DIR} --jsonl_path ${JSONL_PATH}
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
