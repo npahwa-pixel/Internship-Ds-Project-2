@@ -26,6 +26,10 @@ It is designed to work with an existing checkpoint directory like:
     ├── inference/       # predict tags + BIO→spans + JSON emission
     └── artifacts/       # write run_summary, metrics, predictions jsonl
 ```
+## Model checkpoints are stored externally (not committed to GitHub). Download them from:
+```
+https://docs.google.com/document/d/1b3ftGIiYNDvyCPWJsa6qJTdI9gkJHAWej7pLpZL7u-8/edit?tab=t.0
+```
 
 ## Install
 
